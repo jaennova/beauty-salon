@@ -1,0 +1,136 @@
+{
+  "businessInfo": {
+    "name": "Dany Soto",
+    "address": "Calle General Francisco I. Mújica, 39932 10 de Abril Gro., México",
+    "phone": "744 325 2351",
+    "whatsapp": "527443252351",
+    "email": "contact@beautysalon.com",
+    "schedule": {
+      "weekdays": {
+        "days": "Lunes a Viernes",
+        "hours": "9:30 AM - 5:00 PM"
+      },
+      "sunday": {
+        "days": "Sabado y Domingo",
+        "hours": "Cerrado"
+      }
+    }
+  },
+  "socialMedia": {
+    "instagram": {
+      "username": "eyelovelashes_dany",
+      "url": "https://instagram.com/eyelovelashes_dany"
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/profile.php?id=100089888779498&mibextid=ZbWKwL"
+    },
+    "whatsapp": {
+      "number": "527443252351",
+      "message": "Hola, me gustaría obtener más información"
+    }
+  },
+  "services": [
+    {
+      "category": "Uñas",
+      "items": [
+        {
+          "title": "Uñas Acrílicas",
+          "description": "Aplicación profesional de uñas acrílicas con diseño personalizado",
+          "price": "Desde $300",
+          "duration": "2 horas",
+          "image": "/images/nails.png"
+        }
+      ]
+    },
+    {
+      "category": "Cejas",
+      "items": [
+        {
+          "title": "Cejas HD",
+          "description": "Diseño y definición de cejas de alta precisión",
+          "price": "Desde $200",
+          "duration": "45 min",
+          "image": "/images/eyebrows.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Pestañas",
+      "items": [
+        {
+          "title": "Pestañas Mink 1x1",
+          "description": "Extensiones de pestañas naturales aplicadas una por una",
+          "price": "Desde $400",
+          "duration": "2 horas",
+          "image": "/images/lashes.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Gelish",
+      "items": [
+        {
+          "title": "Gelish",
+          "description": "Gelish",
+          "price": "Desde $400",
+          "duration": "2 horas",
+          "image": "/images/lashes.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Planchado",
+      "items": [
+        {
+          "title": "Planchado de Cejas",
+          "description": "Gelish",
+          "price": "Desde $400",
+          "duration": "2 horas",
+          "image": "/images/lashes.jpg"
+        },
+        {
+          "title": "Planchado Express",
+          "description": "Planchado express de cabello",
+          "price": "Desde $400",
+          "duration": "2 horas",
+          "image": "/images/lashes.jpg"
+        }
+      ]
+    }
+  ],
+  "gallery": {
+    "categories": ["Uñas", "Cejas", "Pestañas"],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80",
+        "category": "Uñas",
+        "title": "Diseño de Uñas"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80",
+        "category": "Cejas",
+        "title": "Cejas HD"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80",
+        "category": "Pestañas",
+        "title": "Pestañas Mink"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80",
+        "category": "Uñas",
+        "title": "Diseño de Uñas"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80",
+        "category": "Cejas",
+        "title": "Cejas HD"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80",
+        "category": "Pestañas",
+        "title": "Pestañas Mink"
+      }
+    ]
+  }
+}

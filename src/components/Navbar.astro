@@ -1,0 +1,91 @@
+---
+import websiteData from '../data/website.json';
+const { businessInfo } = websiteData;
+
+const menuItems = [
+  { href: '/', text: 'Inicio' },
+  { href: '/services', text: 'Servicios' },
+  { href: '/gallery', text: 'Galería' },
+  // { href: '/booking', text: 'Reservar' },
+  { href: '/contact', text: 'Contacto' },
+];
+---
+
+<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between h-16">
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="text-xl md:text-2xl font-serif font-bold text-primary">
+          {businessInfo.name}
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="flex items-center sm:hidden">
+        <button
+          type="button"
+          class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop menu -->
+      <div class="hidden sm:flex sm:items-center sm:space-x-4 md:space-x-8">
+        {menuItems.map(item => (
+          <a
+            href={item.href}
+            class="text-sm md:text-base font-medium text-gray-900 hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-200"
+          >
+            {item.text}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+    <div class="pt-2 pb-3 space-y-1">
+      {menuItems.map(item => (
+        <a
+          href={item.href}
+          class="block px-4 py-2 text-base font-medium text-gray-900 hover:text-primary hover:bg-gray-50"
+        >
+          {item.text}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+    mobileMenuButton.setAttribute('aria-expanded', (!expanded).toString());
+  });
+</script>
+
+<style>
+  nav {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav.nav-hidden {
+    transform: translateY(-100%);
+  }
+
+  .mobile-menu-button:focus {
+    outline: 2px solid theme('colors.primary');
+    outline-offset: 2px;
+  }
+</style>

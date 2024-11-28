@@ -1,0 +1,38 @@
+{
+  "name": "beauty-salon-website",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fullcalendar/core": "^6.1.11",
+    "@fullcalendar/daygrid": "^6.1.11",
+    "@fullcalendar/interaction": "^6.1.11",
+    "@fullcalendar/timegrid": "^6.1.11",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "astro": "^4.5.0",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.29.4",
+    "instagram-web-api": "^2.2.2",
+    "postgres": "^3.4.5",
+    "svelte": "^4.2.12",
+    "tailwindcss": "^3.4.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.2",
+    "drizzle-kit": "^0.20.14"
+  }
+}

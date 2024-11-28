@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.svelte';
+import FeaturedServices from '../components/FeaturedServices.svelte';
+---
+
+<Layout title="Beauty Salon - Home">
+  <Hero client:load />
+  <FeaturedServices client:load />
+</Layout>
