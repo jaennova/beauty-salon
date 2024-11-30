@@ -1,54 +1,115 @@
-# Astro Starter Kit: Basics
+# Beauty Salon Website Template
 
-```sh
-npm create astro@latest -- --template basics
+Sitio web profesional y moderno para salones de belleza, desarrollado con Astro, Svelte y Tailwind CSS.
+
+## 🚀 Características
+
+- Diseño moderno y responsive
+- Catálogo personalizable de servicios
+- Sistema de reserva de citas
+- Galería de trabajos
+- Integración con redes sociales
+- Información de contacto y ubicación
+- Horarios de atención personalizables
+
+## 💻 Tecnologías
+
+- [Astro](https://astro.build/) - Framework web
+- [Svelte](https://svelte.dev/) - Framework UI
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
+- [FullCalendar](https://fullcalendar.io/) - Calendario para reservas
+- [Drizzle ORM](https://orm.drizzle.team/) - ORM para base de datos
+- [PostgreSQL](https://www.postgresql.org/) - Base de datos
+
+## 🛠️ Instalación
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/jaennova/beauty-salon.git
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+3. Configura las variables de entorno:
+Crea un archivo `.env` basado en `.env.example`
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+4. Personaliza la información del negocio:
+Modifica el archivo `src/data/website.json` con los datos de tu negocio
 
-## 🚀 Project Structure
+5. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📋 Comandos Disponibles
+
+| Comando                   | Descripción                                      |
+| :----------------------- | :----------------------------------------------- |
+| `npm run dev`            | Inicia servidor de desarrollo en `localhost:4321`|
+| `npm run build`          | Construye el sitio para producción              |
+| `npm run preview`        | Vista previa de la build                        |
+| `npm run db:generate`    | Genera migraciones de la base de datos          |
+| `npm run db:push`        | Aplica migraciones a la base de datos           |
+| `npm run db:studio`      | Abre Drizzle Studio para gestionar la BD        |
+
+## 📁 Estructura del Proyecto
 
 ```text
 /
-├── public/
-│   └── favicon.svg
+├── public/              # Archivos estáticos
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/      # Componentes reutilizables
+│   ├── layouts/         # Layouts de páginas
+│   ├── pages/           # Páginas del sitio
+│   └── data/           # Datos y configuración
+├── astro.config.mjs     # Configuración de Astro
+└── package.json         # Dependencias y scripts
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🌟 Características Principales
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Página de Inicio**: Showcase de servicios destacados
+- **Catálogo de Servicios**: Lista detallada de servicios y precios
+- **Sistema de Reservas**: Calendario interactivo para agendar citas
+- **Galería**: Muestra de trabajos realizados
+- **Información de Contacto**: Datos de contacto y ubicación
+- **Integración con Redes Sociales**: Enlaces a perfiles sociales
+- **Horarios**: Sistema de horarios personalizable
+- **Diseño Responsivo**: Adaptable a todos los dispositivos
 
-Any static assets, like images, can be placed in the `public/` directory.
+## ⚙️ Personalización
 
-## 🧞 Commands
+1. **Información del Negocio**
+   - Modifica `src/data/website.json` con los datos de tu negocio
+   - Actualiza logos e imágenes en la carpeta `public/`
 
-All commands are run from the root of the project, from a terminal:
+2. **Estilos**
+   - Personaliza colores y estilos en `tailwind.config.cjs`
+   - Modifica los componentes en `src/components/`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+3. **Contenido**
+   - Actualiza textos y servicios en los archivos correspondientes
+   - Personaliza las páginas en `src/pages/`
 
-## 👀 Want to learn more?
+## 📱 Integración con Redes Sociales
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+El sitio permite integración con:
+- Instagram
+- Facebook
+- WhatsApp Business
+- Otras redes sociales (personalizables)
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+
+## 🤝 Contribuir
+
+Las contribuciones son bienvenidas. Por favor, lee `CONTRIBUTING.md` para detalles sobre nuestro código de conducta y el proceso para enviar pull requests.
+
+## 🐛 Reportar Problemas
+
+Si encuentras algún problema o tienes sugerencias, por favor crea un issue en el repositorio.
