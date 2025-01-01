@@ -25,7 +25,7 @@
       "url": "https://www.facebook.com/profile.php?id=100089888779498&mibextid=ZbWKwL"
     },
     "whatsapp": {
-      "number": "527443252351",
+      "url": "wa.me/+527443252351",
       "message": "Hola, me gustaría obtener más información"
     }
   },
@@ -99,7 +99,11 @@
     }
   ],
   "gallery": {
-    "categories": ["Uñas", "Cejas", "Pestañas"],
+    "categories": [
+      "Uñas",
+      "Cejas",
+      "Pestañas"
+    ],
     "images": [
       {
         "url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80",
